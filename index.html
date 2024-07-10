@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>@imthebernard | Web & Mobile Development | Software Developer | SEO </title>
+
+     <!-- Meta Tags -->
+     <meta name="description" content="Find reliable legal services with our experienced counsel at Allen Chee Ram, Advocates & Solicitors. Our dedicated team offers expert advice and representation for various legal matters. Contact us for personalized solutions.">
+     <meta name="keywords" content="legal services, legal counsel, law firm, legal advice, legal representation, experienced lawyers, trusted advocates, corporate">
+     <meta name="author" content="Allen Chee Ram, Advocates & Solicitors">
+ 
+     <!-- Structured Data - JSON-LD -->
+     <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Allen Chee Ram, Advocates & Solicitors",
+        "url": "https://allencheeram.com",
+        "logo": "https://www.allencheeram.com/images/acr-logo.png",
+        "description": "Expert in provision of legal services and legal advice in Malaysia",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "51-14-A, Menara BHL Bank",
+          "addressLocality": "Jalan Sultan Ahmad Shah",
+          "addressRegion": "George Town, Penang",
+          "postalCode": "10050",
+          "addressCountry": "Malaysia"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+604-227-8999",
+          "contactType": "enquiries"
+        }
+      }
+    </script>
+
+  <link rel="icon" type="image/png" href="/images/acr-icon.png" />
+  <link rel="stylesheet" href="main.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="roboto-regular">
+
+    <nav class="roboto-bold">
+        <div></div>
+        <div>
+            <div>Home</div>
+            <div>About Me</div>
+            <a href="/" class="button">
+                <div>Let's Talk</div>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="hero">
+            <div class="hero-hs">
+                <img src="public/1.jpg" alt >
+            </div>
+            <div class="hero-gif">
+
+                <div class="hero-top">
+                    <a href="/" class="logo-container">
+                        <img src="fb.svg" alt="Facebook profile of imthebernard" />
+                    </a>
+                    <a href="/" class="logo-container">
+                        <img src="ig.svg" alt="Instagram profile of imthebernard" />
+                    </a>
+                    <a href="/" class="logo-container">
+                        <img src="wa.svg" alt="WhatsApp profile of imthebernard" />
+                    </a>
+                </div>
+
+                <div class="hero-btm">
+                    <div>
+                        <span class="roboto-light">imthe</span><span class="roboto-bold">bernard</span>
+                        <div class="hero-btm-desc">Software Developer / Paralegal / Aspiring Chef</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-title roboto-bold">Portfolio - Completed Projects</div>
+
+        <div class="portfolio">
+            <a href="/" class="card" target="_blank">
+                <div class="card-img-container">
+                    <img src="acr.png" alt="webpage-development" />
+                </div>
+                <div class="roboto-light card-desc">
+                    <div>Allen Chee Ram</div>
+                    <div>Professional Services - Law firm</div>
+                </div>
+            </a>
+
+            <a href="/" class="card" target="_blank">
+                <div class="card-img-container">
+                    <img src="ascend.png" alt="webpage-development" />
+                </div>
+                <div class="roboto-light card-desc">
+                    <div>Ascend BPS Sdn Bhd</div>
+                    <div>Professional Services</div>
+                </div>
+            </a>
+          
+        </div>
+
+        <div class="footer-bot-cont">
+            <div class="fb-item">
+                <div>&#169; 2024 - @imthebernard</div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const logos = document.querySelectorAll(".hero-top .logo-container");
+            
+            logos.forEach((logo, index) => {
+                setTimeout(() => {
+                    logo.classList.add("drop-animation");
+                }, 1500 + index * 500); // Delay: 2s + 0.5s * index
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            setTimeout(function () {
+                document.querySelector('.hero-btm').classList.add('show');
+            }, 500); // 1 second delay
+        });
+    </script>
+
+</body>
+</html>
